@@ -1,5 +1,6 @@
 anaconda-client==1.2.2
 clyent==1.2.1
+dj-database-url==0.4.1
 Django==1.9.5
 gunicorn==19.4.5
 python-dateutil==2.5.3
