@@ -1,6 +1,7 @@
 anaconda-client==1.2.2
 clyent==1.2.1
 Django==1.9.5
+gunicorn==19.4.5
 python-dateutil==2.5.3
 pytz==2016.4
 PyYAML==3.11
