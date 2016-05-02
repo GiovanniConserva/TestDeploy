@@ -15,13 +15,7 @@ ADMINS = (
 MANAGERS = ADMINS
 
 import dj_database_url
-DATABASES = {
-    'default': dj_database_url.config(default='sqlite:///db.sqlite')
-}
 
-DATABASES = { 'default': dj_database_url.config() }
-
-'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
@@ -33,7 +27,7 @@ DATABASES = {
         'PORT': '',                      # Set to empty string for default.
     }
 }
-'''
+
 db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
 # Hosts/domain names that are valid for this site; required if DEBUG is False
